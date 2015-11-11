@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ellekay.lucie.fashionhouse.Catalog"
+    android:weightSum="1">
+
+
+    <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textColor="#000000"
+        android:textSize="24dip"
+        android:text="Product Catalog"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+
+
+
+    <ListView android:layout_height="wrap_content"
+        android:id="@+id/ListViewCatalog"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:clickable="true" android:cacheColorHint="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView01"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/ButtonViewCart"
+        android:text="View Shopping Cart"
+        android:layout_alignBottom="@+id/ListViewCatalog"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
